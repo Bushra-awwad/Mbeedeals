@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mbeedeals</string>
+    <string name="Sign_up">التسجيل</string>
+    <string name="Sign_in">تسجيل الدخول</string>
+    <string name="Name">الأسم</string>
+    <string name="Email">البريد الإلكتروني</string>
+    <string name="Phone">رقم الجوال</string>
+    <string name="password">كلمة السر</string>
+    <string name="confirm_password">تأكيد كلمة السر</string>
+    <string name="Register">تسجيل</string>
+    <string name="google">التسجيل باستخدام جوجل</string>
+
+</resources>
