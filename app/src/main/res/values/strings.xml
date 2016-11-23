@@ -8,6 +8,6 @@
     <string name="password">كلمة السر</string>
     <string name="confirm_password">تأكيد كلمة السر</string>
     <string name="Register">تسجيل</string>
-    <string name="google">التسجيل باستخدام جوجل</string>
+    <string name="google">التسجيل باستخدام Google</string>
 
 </resources>
