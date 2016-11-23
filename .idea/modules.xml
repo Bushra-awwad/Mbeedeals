@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/libraries/CountryCodePickerProject-master/CountryCodePickerProject-master.iml" filepath="$PROJECT_DIR$/libraries/CountryCodePickerProject-master/CountryCodePickerProject-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mbeedeals.iml" filepath="$PROJECT_DIR$/Mbeedeals.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
     </modules>
   </component>
 </project>
