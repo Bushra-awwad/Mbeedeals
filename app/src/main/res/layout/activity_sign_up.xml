@@ -44,16 +44,34 @@
             android:inputType="textEmailAddress"
             android:layout_marginTop="@dimen/layout_marginTop"
             />
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/PhoneNumber"
-            android:hint="@string/Phone"
-            android:maxLength="12"
-            android:maxLines="1"
-            android:inputType="number"
+            android:orientation="horizontal"
+            android:gravity="center"
             android:layout_marginTop="@dimen/layout_marginTop"
-            />
+            >
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".40"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".60"
+                android:id="@+id/PhoneNumber"
+                android:hint="@string/Phone"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:inputType="number"
+
+                />
+
+
+        </LinearLayout>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
