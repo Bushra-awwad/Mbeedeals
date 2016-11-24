@@ -9,5 +9,6 @@
     <string name="confirm_password">تأكيد كلمة السر</string>
     <string name="Register">تسجيل</string>
     <string name="google">التسجيل باستخدام Google</string>
+    <string name="google_sign_in">تسجيل الدخول باستخدام Google</string>
 
 </resources>

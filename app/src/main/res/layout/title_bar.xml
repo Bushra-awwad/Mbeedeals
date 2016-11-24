@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_ab_back_material_light"
-        android:id="@+id/imageButton"
+        android:id="@+id/arrowback"
         android:backgroundTint="@color/colorPrimary"
         android:scaleX="-1"
         android:layout_alignParentRight="true"
