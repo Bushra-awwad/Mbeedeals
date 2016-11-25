@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemOne"
+        android:title="بحث"
+        android:icon="@drawable/ic_action_search">
+    </item>
+    <item
+        android:id="@+id/itemTow"
+        android:title="تنبيهات"
+        android:icon="@drawable/ic_action_search">
+    </item>
+    <item
+        android:id="@+id/itemThree"
+        android:title="اعلاناتي"
+        android:icon="@drawable/ic_action_search">
+    </item>
+    <item
+        android:id="@+id/itemFour"
+        android:title="طلباتي"
+        android:icon="@drawable/ic_action_search">
+    </item>
+    <item
+        android:id="@+id/itemFive"
+        android:title="لقاءاتي"
+        android:icon="@drawable/ic_action_search">
+    </item>
+</menu>
