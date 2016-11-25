@@ -9,16 +9,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".introActivity">
+        <activity android:name=".introActivity"></activity>
+        <activity android:name=".signUp"></activity>
+        <activity android:name=".SignIn"></activity>
+        <activity android:name=".search">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".signUp"></activity>
-        <activity android:name=".SignIn"></activity>
-        <activity android:name=".search"></activity>
     </application>
 
 </manifest>
