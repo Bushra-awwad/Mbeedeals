@@ -13,29 +13,22 @@
     <include
         android:id="@+id/title_bar"
         layout="@layout/title_bar"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_weight="5"
         />
 
 <FrameLayout
     android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="40"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
     android:id="@+id/PlaceHolder">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="eeee;ojr"
-    android:textSize="@dimen/text_Button"
-    />
+
 
 </FrameLayout>
    <com.roughike.bottombar.BottomBar
             android:id="@+id/bottomBar"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-             android:layout_weight="5"
+            android:layout_height="56dp"
             android:layout_alignParentBottom="true"
             app:bb_tabXmlResource="@xml/bottombar_tabs"
             />

@@ -1,23 +1,17 @@
 package mbeeseals.com.mbeedeals;
 
 import android.support.annotation.IdRes;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
-
 import com.roughike.bottombar.BottomBar;
+import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
 
 
 public class MainActivity extends AppCompatActivity {
-
-   ViewPager viewPager;
-    FragmentPagerAdapter ft;
 
 
     @Override
@@ -32,39 +26,42 @@ public class MainActivity extends AppCompatActivity {
         title.setText(R.string.app_name);
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
-        bottomBar.setDefaultTabPosition(4);
+
+        final SearchFragment searchFragment = new SearchFragment();
+        final NotificationFragment notificationFragment = new NotificationFragment();
+        final AdsFragment adsFragment = new AdsFragment();
+        final requestFragment requestFragment = new requestFragment();
+        final MeetingFragment meetingFragment = new MeetingFragment();
 
           bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
               @Override
               public void onTabSelected(@IdRes int tabId) {
-
+                  FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                 if (tabId == R.id.itemOne) {
-                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.PlaceHolder , new SearchFragment());
+                    ft.replace(R.id.PlaceHolder , searchFragment);
                     ft.commit();
                 }
                 else if (tabId == R.id.itemTow) {
-                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.PlaceHolder , new requestFragment());
+                    ft.replace(R.id.PlaceHolder , notificationFragment);
                     ft.commit();
                 }
                 else if(tabId == R.id.itemThree) {
-                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.PlaceHolder , new singInFragment());
+                    ft.replace(R.id.PlaceHolder ,adsFragment);
                     ft.commit();
                 }
                 else if(tabId == R.id.itemFour) {
-                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.PlaceHolder , new signUpFragment());
+                    ft.replace(R.id.PlaceHolder , requestFragment);
                     ft.commit();
                 }
                 else if(tabId == R.id.itemFive) {
-                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.PlaceHolder , new introFragment());
+                    ft.replace(R.id.PlaceHolder , meetingFragment);
                     ft.commit();
                 }
             }
         });
+
+
+
 
 
 }}

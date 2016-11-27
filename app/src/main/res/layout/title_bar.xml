@@ -27,6 +27,7 @@
         android:backgroundTint="@color/colorPrimary"
         android:scaleX="-1"
         android:layout_alignParentRight="true"
+        android:visibility="invisible"
 
         />
 </RelativeLayout>

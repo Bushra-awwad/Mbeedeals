@@ -16,8 +16,6 @@ import com.google.android.gms.common.SignInButton;
  */
 public class signUpFragment extends Fragment {
 
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
     public signUpFragment() {
         // Required empty public constructor
