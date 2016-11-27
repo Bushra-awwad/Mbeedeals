@@ -1,18 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_sign_in"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="mbeeseals.com.mbeedeals.singInFragment">
 
-    tools:context="mbeeseals.com.mbeedeals.SignIn">
-
-    <include
-        android:id="@+id/title_bar"
-        layout="@layout/title_bar"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        />
+    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,7 +15,7 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
 
->
+        >
 
         <EditText
             android:layout_width="match_parent"
@@ -112,4 +104,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</FrameLayout>
